@@ -2,6 +2,7 @@ import UIKit
 import Photos
 private func < <T: Comparable>(lhs: T?, rhs: T?) -> Bool {
   switch (lhs, rhs) {
+  // swiftlint:disable identifier_name
   case let (l?, r?):
     return l < r
   case (nil, _?):
